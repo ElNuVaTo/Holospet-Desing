@@ -1,0 +1,37 @@
+[
+  {
+    "imgSrc": "URL_DE_LA_IMAGEN_1",
+    "nombre": "Cool & Clean Arena Sanitaria Aglutinante",
+    "marca": "Coll & Clean",
+    "kg": "8 kg",
+    "precio": "$14.900"
+  },
+  {
+    "imgSrc": "URL_DE_LA_IMAGEN_2",
+    "nombre": "Nombre del Producto 2",
+    "marca": "Marca 2",
+    "kg": "5 kg",
+    "precio": "$10.500"
+  },
+  {
+    "imgSrc": "URL_DE_LA_IMAGEN_3",
+    "nombre": "Nombre del Producto 3",
+    "marca": "Marca 3",
+    "kg": "10 kg",
+    "precio": "$18.200"
+  },
+  {
+    "imgSrc": "URL_DE_LA_IMAGEN_4",
+    "nombre": "Nombre del Producto 4",
+    "marca": "Marca 4",
+    "kg": "12 kg",
+    "precio": "$22.500"
+  },
+  {
+    "imgSrc": "URL_DE_LA_IMAGEN_5",
+    "nombre": "Nombre del Producto 5",
+    "marca": "Marca 5",
+    "kg": "15 kg",
+    "precio": "$30.000"
+  }
+]

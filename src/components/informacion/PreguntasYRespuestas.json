@@ -1,0 +1,42 @@
+[
+  {
+    "pregunta": "¿Cuál es la dirección de la tienda?",
+    "respuesta": "La tienda está ubicada en Av. Guillermo Ulriksen #3098, La Serena."
+  },
+  {
+    "pregunta": "¿Cuál es el horario de atención de la tienda?",
+    "respuesta": "Atendemos de Lunes a Domingo en horario continuo."
+  },
+  {
+    "pregunta": "¿Cuál es el número de teléfono de la tienda para hacer consultas o pedidos?",
+    "respuesta": "Puedes contactarnos al +56 9 3958 5042 para consultas y pedidos."
+  },
+  {
+    "pregunta": "¿Ofrecen la opción de retiro en tienda? Si es así, ¿cómo funciona?",
+    "respuesta": "Sí, ofrecemos la opción de retiro en tienda al instante. Simplemente realiza tu pedido y pásate a retirarlo por nuestra tienda."
+  },
+  {
+    "pregunta": "¿Cuánto tiempo demora el servicio de Delivery Express en entregar los pedidos?",
+    "respuesta": "Nuestro servicio de Delivery Express garantiza la entrega de tu pedido en menos de 180 minutos."
+  },
+  {
+    "pregunta": "¿Tienen una variedad de productos para mascotas disponibles?",
+    "respuesta": "¡Por supuesto! Contamos con una amplia variedad de productos para mascotas que incluye alimentos, juguetes, accesorios y más."
+  },
+  {
+    "pregunta": "¿Puedo hacer pedidos por teléfono o en línea?",
+    "respuesta": "Sí, puedes realizar tus pedidos tanto por teléfono como en línea a través de nuestro sitio web."
+  },
+  {
+    "pregunta": "¿Cuál es el proceso para hacer una devolución o cambio de un producto?",
+    "respuesta": "Si necesitas realizar una devolución o cambio de un producto, por favor comunícate con nuestro equipo de atención al cliente para recibir asistencia."
+  },
+  {
+    "pregunta": "¿Ofrecen asesoramiento para elegir productos adecuados para mi mascota?",
+    "respuesta": "¡Claro! Nuestro equipo estará encantado de brindarte asesoramiento personalizado para elegir los productos más adecuados para tu mascota."
+  },
+  {
+    "pregunta": "¿Tienen promociones o descuentos especiales en ciertos días de la semana?",
+    "respuesta": "Sí, tenemos promociones y descuentos especiales en diferentes días de la semana. Te recomendamos estar atento a nuestras redes sociales y sitio web para enterarte de las ofertas vigentes."
+  }
+]
