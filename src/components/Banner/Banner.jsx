@@ -10,7 +10,6 @@ import banner2 from "../../assets/banner/Banner-2.jpg";
 import banner3 from "../../assets/banner/Banner-3.jpeg";
 import banner4 from "../../assets/banner/Banner-4.jpg";
 import banner5 from "../../assets/banner/Banner-5.jpg";
-import Informacion from "./Informacion";
 
 const Imagen = styled(motion.img)`
   position: absolute;

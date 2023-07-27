@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const Contenedor = styled.div`
   width: 90%;
-  max-width: 350px;
+  max-width: 500px;
   border: 1px solid #ccc;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
 `;
 
 const Item = styled.div`

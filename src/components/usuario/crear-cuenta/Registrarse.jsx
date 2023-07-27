@@ -90,11 +90,11 @@ const Registrarse = () => {
               value={nombre}
               onChange={onChangeNombre}
             />
-            <Texto
+            <Contraseña
               htmlFor="Contraseña *"
-              placeHolder="example@example.com"
-              value={correo}
-              onChange={onChangeCorreo}
+              placeHolder="● ● ● ● ● ● ● ●"
+              value={contraseña}
+              onChange={onChangeContraseña}
             />
             <Contraseña
               htmlFor="Repetir contraseña *"

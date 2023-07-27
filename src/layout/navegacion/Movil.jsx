@@ -6,21 +6,25 @@ import LogoMovil from "./LogoMovil";
 
 const Contenedor = styled(motion.div)`
   display: flex;
-  flex-direction: column;
-  position: absolute;
   width: 100%;
-  padding: 15px 0;
   z-index: 14;
-  background-color: #ffffff;
-  list-style: none;
-  gap: 15px;
+  height: 220px;
+  position: absolute;
   @media (min-width: 600px) {
     display: none;
-    background-color: #ffffff;
   }
 `;
 const Ul = styled.ul`
-  border: 1px solid black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ffffff;
+  list-style: none;
+  gap: 15px;
 `;
 const Lista = styled.li`
   margin: auto;
@@ -45,7 +49,6 @@ const Movil = () => {
         <Lista>
           <LogoMovil />
         </Lista>
-
 
         <Lista>
           <Link href="/informacion">Informacion</Link>

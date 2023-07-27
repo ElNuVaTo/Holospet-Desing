@@ -11,9 +11,9 @@ const InicioPage = () => {
       <Banner />
       <Router />
       <Novedades />
-      {/* <GoogleReviews /> */}
-      {/* <Map /> */}
-      {/* <Footer /> */}
+      <GoogleReviews />
+      <Map />
+      <Footer />
     </>
   );
 };
