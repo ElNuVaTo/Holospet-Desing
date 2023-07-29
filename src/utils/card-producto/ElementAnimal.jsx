@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import BtnComprar from "./BtnComprar";
 
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 250px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  padding: 15px 15px;
+  height: 350px;
+  background-color: white;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  padding: 10px 10px 15px 10px;
   border-radius: 5px;
   gap: 5px;
   margin: auto;
@@ -30,37 +33,11 @@ const CardMarca = styled.em`
   color: grey;
   font-size: 14px;
 `;
-const CardKg = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background-color: #007bff;
-  width: max-content;
-  padding: 2px 10px;
-  color: white;
-  border-radius: 5px;
-  font-size: 14px;
-`;
 const CardPrecio = styled.b`
   font-size: 17px;
 `;
 
-const CardComprar = styled.button`
-  padding: 8px 10px;
-  width: 100%;
-  font-size: 16.5px;
-  max-width: 180px;
-  margin: 10px auto 0 auto;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: #ec6c24;
-  color: white;
-`;
-
-const ElementAnimal = ({ src, nombre, marca, kg, precio }) => {
+const ElementAnimal = ({ src, nombre, marca, precio }) => {
   return (
     <>
       <CardContainer>
@@ -69,10 +46,9 @@ const ElementAnimal = ({ src, nombre, marca, kg, precio }) => {
         </CardImage>
         <CardNombre>{nombre}</CardNombre>
         <CardMarca>{marca}</CardMarca>
-        <CardKg>{kg}</CardKg>
         <CardPrecio>{precio}</CardPrecio>
 
-        <CardComprar type="button">Comprar</CardComprar>
+        <BtnComprar />
       </CardContainer>
     </>
   );

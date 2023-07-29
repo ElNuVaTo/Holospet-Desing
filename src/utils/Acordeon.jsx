@@ -3,21 +3,23 @@ import styled from "styled-components";
 
 const Contenedor = styled.div`
   width: 90%;
-  max-width: 500px;
-  border: 1px solid #ccc;
+  max-width: 550px;
+  border: 1px solid #ddd;
   margin: 0 auto 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
 `;
 
 const Item = styled.div`
   padding: 10px;
-  border-bottom: 1px solid #ccc;
-  background-color: ${(props) => (props.active ? "#f0f0f0" : "transparent")};
+  background-color: ${(props) => (props.active ? "#e1e1e1" : "white")};
   cursor: pointer;
 `;
 
 const Contenido = styled.div`
   padding: 10px;
   display: ${(props) => (props.active ? "block" : "none")};
+  background-color: white;
 `;
 
 const Acordeon = ({ pregunta, respuesta }) => {

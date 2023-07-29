@@ -23,6 +23,7 @@ const Link = styled.a`
   color: black;
   text-decoration: none;
   border: 1px solid #b8b8b8;
+  background-color: white;
   border-radius: 5px;
   width: 200px;
   padding: 5px 10px;

@@ -1,30 +1,39 @@
 import styled from "styled-components";
-import ElementAnimal from "../../utils/ElementAnimal";
+import ElementAnimal from "../../utils/card-producto/ElementAnimal";
 import MapJson from "./UltimosLanzamientos.json";
 
 const Contenedor = styled.section`
-  margin: 50px 0;
+  margin: 30px 0;
 `;
 
-const Contenedor_Titulo = styled.div`
-  display: flex;
-  width: max-content;
-  margin: auto;
-`;
-const Titulo = styled.h2`
+const Contenedor_Titulo = styled.h1`
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-size: 26px;
+  text-align: left;
   position: relative;
-  margin-bottom: 35px;
-  b {
-    color: #007bff;
-  }
-
-  @media (min-width: 500px) {
-    flex-direction: row;
-    display: block;
+  margin: auto;
+  font-size: 25px;
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 1100px;
+  overflow: hidden;
+  ::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    top: 50%;
+    right: 0;
+    background: #c7c7c7;
+    @media (min-width: 768px) {
+      width: 55%;
+    }
+    @media (min-width: 1024px) {
+      width: 65%;
+    }
+    @media (min-width: 1200px) {
+      width: 72%;
+    }
   }
 `;
 
@@ -33,8 +42,9 @@ const Contenedor_Contenedor = styled.div`
   justify-content: center;
   align-items: center;
   width: 85%;
-  margin: 0 auto 50px auto;
-  gap: 50px 0;
+  max-width: 1150px;
+  margin: 0 auto 45px auto;
+  gap: 30px 0;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 `;
@@ -44,10 +54,7 @@ const Novedades = () => {
     <>
       <Contenedor>
         <Contenedor_Titulo>
-          <Titulo>
-            Ultimos
-            <b> lanzamientos</b>
-          </Titulo>
+          Productos más populares
         </Contenedor_Titulo>
 
         <Contenedor_Contenedor>

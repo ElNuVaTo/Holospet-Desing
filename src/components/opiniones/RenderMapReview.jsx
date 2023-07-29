@@ -6,8 +6,8 @@ const Contenedor = styled.div`
   width: 300px;
   min-height: 200px;
   margin: auto;
-  padding: 15px 10px;
-  border: 1px solid #dddddd3f;
+  padding: 10px;
+  border: 1px solid #dddddd;
   background: white;
   border-radius: 15px;
 `;
@@ -30,8 +30,6 @@ const Review = styled.div`
   p {
     height: 92px;
     overflow: hidden;
-
-
   }
 `;
 

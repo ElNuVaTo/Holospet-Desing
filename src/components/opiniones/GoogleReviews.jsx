@@ -5,8 +5,35 @@ import axios from "axios";
 
 import RenderMapReview from "./RenderMapReview";
 
-const SubTitulo = styled.h2`
- text-align: center;
+const Subtitulo = styled.h2`
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  position: relative;
+  font-size: 22px;
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  ::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    top: 50%;
+    left: 0;
+    background: #c7c7c7;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 1024px) {
+      width: 65%;
+    }
+    @media (min-width: 1200px) {
+      width: 70%;
+    }
+  }
 `;
 const Contenedor = styled.section`
   display: flex;
@@ -21,7 +48,7 @@ const Draggeable = styled(motion.ul)`
   width: max-content;
   padding: 20px 20px;
   gap: 35px;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   li {
     list-style-type: none;
   }
@@ -43,7 +70,7 @@ const GoogleReviews = () => {
 
   return (
     <>
-      <SubTitulo>¿Qué opinan nuestros clientes?</SubTitulo>
+      <Subtitulo>¿Qué opinan nuestros clientes?</Subtitulo>
       <Contenedor ref={dragRef}>
         {getReview.length > 0 ? (
           <Draggeable drag="x" dragElastic={false} dragConstraints={dragRef}>

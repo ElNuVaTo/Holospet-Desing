@@ -8,11 +8,12 @@ const Main = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 0 auto;
   max-width: 850px;
   height: 500px;
-  background-color: #efefef;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 `;
 const Contenedor = styled.div``;
 const Contenedor_Enviar_Texto = styled.div`
@@ -27,15 +28,16 @@ const Label = styled.label`
   display: flex;
   overflow: hidden;
   height: 32px;
-  width: 100%;
-  border-radius: 15px;
+  width: 95%;
+  margin: auto;
+  border-radius: 10px;
 `;
 const Input = styled.input`
   width: 100%;
   padding: 0 15px;
   font-size: 15.5px;
   height: 100%;
-  border-radius: 15px 0 0 15px;
+  border-radius: 10px 0 0 10px;
   border: none;
   background-color: #f6f8fc;
   border: 1px solid #c8c8c8;

@@ -5,7 +5,7 @@ const Router = styled.a`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #000000;
   white-space: nowrap;
   text-decoration: none;
   font-size: 16px;
@@ -17,9 +17,7 @@ const Router = styled.a`
     border-radius: 5px;
     padding: 5px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     @media (min-width: 990px) {
       width: 120px;
       height: 120px;
