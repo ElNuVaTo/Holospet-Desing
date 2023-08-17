@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Estrellas from "./Estrellas";
 
 const Contenedor = styled.div`
   display: flex;
@@ -15,11 +16,15 @@ const Usuario = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  img {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-  }
+`;
+const Photo_Usuario = styled.img`
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+`;
+const User_Name_Estrellas = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 const Review = styled.div`
   display: flex;
@@ -38,11 +43,13 @@ const RenderMapReview = ({ src, nombre, start, desc }) => {
     <>
       <Contenedor>
         <Usuario>
-          <img src={src} alt="" />
-          <b>{nombre}</b>
+          <Photo_Usuario src={src} alt="" />
+          <User_Name_Estrellas>
+            <b>{nombre}</b>
+            <Estrellas start={start} />
+          </User_Name_Estrellas>
         </Usuario>
         <Review>
-          <b>{start}</b>
           <p>{desc}</p>
         </Review>
       </Contenedor>

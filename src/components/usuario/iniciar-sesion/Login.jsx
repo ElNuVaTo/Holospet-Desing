@@ -1,4 +1,7 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import axios from "axios";
 
 import Texto from "../Texto";
 import Contraseña from "../Contraseña";
@@ -38,7 +41,32 @@ const Form_Box = styled.div`
   }
 `;
 const Login = () => {
-  const onSubmitIniciarSesion = (e) => e.preventDefault();
+  const navigate = useNavigate();
+
+  const [correo, setCorreo] = useState("");
+  const [contra, setContra] = useState("");
+
+  const onChangeCorreo = (e) => setCorreo(e.target.value);
+  const onChangeContra = (e) => setContra(e.target.value);
+
+  const url = "http://localhost:3001/api/usuario/iniciarSesion";
+  const login = async () => {
+    try {
+      const response = await axios.post(url, {
+        correo: correo,
+        contra: contra,
+      });
+      sessionStorage.setItem("Auth", response.data.token);
+      navigate("/");
+    } catch (error) {
+      console.error("Error en la solicitud POST:", error);
+    }
+  };
+
+  const onSubmitIniciarSesion = (e) => {
+    e.preventDefault();
+    login();
+  };
 
   return (
     <>
@@ -50,14 +78,14 @@ const Login = () => {
             <Texto
               htmlFor="Correo electrónico *"
               placeHolder="example@example.com"
-              value=""
-              onChange=""
+              value={correo}
+              onChange={onChangeCorreo}
             />
             <Contraseña
               htmlFor="Contraseña *"
               placeHolder="● ● ● ● ● ● ● ●"
-              value=""
-              onChange=""
+              value={contra}
+              onChange={onChangeContra}
             />
 
             <Check>Guardar usuario</Check>

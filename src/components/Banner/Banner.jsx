@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import styled from "styled-components";
 import { wrap } from "popmotion";
 
-import Flecha from "../../assets/icons/HaciaArriba.svg";
+import Flecha from "../../assets/icons/Flecha_Banner.svg";
 import banner0 from "../../assets/banner/Banner-0.jpg";
 import banner1 from "../../assets/banner/Banner-1.jpg";
 import banner2 from "../../assets/banner/Banner-2.jpg";

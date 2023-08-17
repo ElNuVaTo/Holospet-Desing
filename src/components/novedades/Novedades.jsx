@@ -1,11 +1,13 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
+import axios from "axios";
+
 import ElementAnimal from "../../utils/card-producto/ElementAnimal";
-import MapJson from "./UltimosLanzamientos.json";
+
 
 const Contenedor = styled.section`
   margin: 30px 0;
 `;
-
 const Contenedor_Titulo = styled.h1`
   display: flex;
   flex-direction: column;
@@ -17,7 +19,7 @@ const Contenedor_Titulo = styled.h1`
   width: 90%;
   max-width: 1100px;
   overflow: hidden;
-  ::after{
+  ::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -36,7 +38,6 @@ const Contenedor_Titulo = styled.h1`
     }
   }
 `;
-
 const Contenedor_Contenedor = styled.div`
   display: grid;
   justify-content: center;
@@ -50,15 +51,30 @@ const Contenedor_Contenedor = styled.div`
 `;
 
 const Novedades = () => {
+  const [getNovedades, setGetNovedades] = useState([]);
+
+  const url = "http://localhost:3001/api/novedades";
+
+  useEffect(() => {
+    const apiGet = async () => {
+      try {
+        const response = await axios.get(url);
+        setGetNovedades(response.data.productos);
+      } catch (err) {
+        console.error("Error en la solicitud GET:", err);
+      }
+    };
+
+    apiGet();
+  }, []);
+
   return (
     <>
       <Contenedor>
-        <Contenedor_Titulo>
-          Productos más populares
-        </Contenedor_Titulo>
+        <Contenedor_Titulo>Productos más populares</Contenedor_Titulo>
 
         <Contenedor_Contenedor>
-          {MapJson.map((item, key) => (
+          {getNovedades.map((item, key) => (
             <div key={key}>
               <ElementAnimal
                 src={item.imgSrc}

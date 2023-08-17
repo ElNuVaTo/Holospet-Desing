@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Btn = styled.button`
-  --width: 135px;
-  --height: 32px;
+  --width: 175px;
+  --height: 35px;
   --gap-between-tooltip-to-button: 18px;
   --button-color: #ff8248;
   display: flex;
@@ -15,7 +15,7 @@ const Btn = styled.button`
   border-radius: 5px;
   border: none;
   transition: background 0.3s;
-  margin: auto auto 0 auto;
+  margin: auto auto auto auto;
   cursor: pointer;
   .text {
     display: flex;
@@ -69,12 +69,12 @@ const Btn = styled.button`
   }
 `;
 
-const BtnComprar = ({ onClick }) => {
+const AgregarAlCarro = ({ onClick }) => {
   return (
     <>
       <Btn type="button" onClick={onClick}>
         <div className="button-wrapper">
-          <div className="text">Comprar</div>
+          <div className="text">Agregar al carrito</div>
           <span className="icon">
             <svg
               viewBox="0 0 16 16"
@@ -93,4 +93,4 @@ const BtnComprar = ({ onClick }) => {
   );
 };
 
-export default BtnComprar;
+export default AgregarAlCarro;

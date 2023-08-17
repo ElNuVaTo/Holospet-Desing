@@ -11,7 +11,6 @@ const Subtitulo = styled.h2`
   text-align: right;
   position: relative;
   font-size: 22px;
-  margin-bottom: 30px;
   width: 90%;
   max-width: 1100px;
   margin: auto;

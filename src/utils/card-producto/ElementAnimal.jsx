@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
 import BtnComprar from "./BtnComprar";
 
 const CardContainer = styled.div`
@@ -38,17 +40,28 @@ const CardPrecio = styled.b`
 `;
 
 const ElementAnimal = ({ src, nombre, marca, precio }) => {
+  const navigate = useNavigate();
+
+  const productoClick = () => {
+    const nombreProducto = nombre
+      .toLowerCase() // Convertir a minúsculas
+      .replace(/ /g, "-") // Reemplazar espacios en blanco por guiones
+      .replace(/ñ/g, "n"); // Reemplazar ñ minúscula
+
+    navigate(`/producto/${nombreProducto}`);
+  };
+
   return (
     <>
       <CardContainer>
-        <CardImage>
+        <CardImage onClick={productoClick}>
           <img src={src} alt="" />
         </CardImage>
         <CardNombre>{nombre}</CardNombre>
         <CardMarca>{marca}</CardMarca>
         <CardPrecio>{precio}</CardPrecio>
 
-        <BtnComprar />
+        <BtnComprar onClick={productoClick} />
       </CardContainer>
     </>
   );
